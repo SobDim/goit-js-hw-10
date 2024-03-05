@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/goit-js-hw-10/",
+    "build": "vite build --base=/goit-js-hw-10",
     "preview": "vite preview",
     "push": "git add .; git commit -a -m 'update'; git push;"
   },
@@ -28,7 +28,7 @@
     "url": "git+https://github.com/SobDim/goit-js-hw-10.git"
   },
   "bugs": {
-    "url": "https://github.com/SobDim/goit-js-hw-10/issues"
+    "url": "https://github.com/SobDim/goit-js-hw-10"
   },
-  "homepage": "https://github.com/SobDim/goit-js-hw-10#readme"
+  "homepage": "https://github.com/SobDim/goit-js-hw-10"
 }
