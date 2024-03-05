@@ -24,10 +24,10 @@
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SobDim/goit-js-hw-09.git"
+    "url": "git+https://github.com/SobDim/goit-js-hw-10.git"
   },
   "bugs": {
-    "url": "https://github.com/SobDim/goit-js-hw-09/issues"
+    "url": "https://github.com/SobDim/goit-js-hw-10/issues"
   },
-  "homepage": "https://github.com/SobDim/goit-js-hw-09#readme"
+  "homepage": "https://github.com/SobDim/goit-js-hw-10#readme"
 }
