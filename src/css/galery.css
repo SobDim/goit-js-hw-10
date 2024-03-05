@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 24px; */
+}
+
+img {
+  display: block;
+  width: 360px;
+  height: 200px;
+}
+
+.gallery {
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.gallery-image {
+  transition: transform 0.25s ease;
+}
+
+.gallery-link:hover .gallery-image,
+.gallery-link:focus .gallery-image,
+.gallery-link:active .gallery-image {
+  transform: scale(1.04);
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.sl-wrapper .sl-counter {
+
+  color: rgba(255, 255, 255, 1);
+
+
+}
+
+.sl-wrapper .sl-navigation button {
+
+  color: rgba(255, 255, 255, 1);
+}
