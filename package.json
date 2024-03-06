@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build --base=/goit-js-hw-10",
     "preview": "vite preview",
-    "push": "git add .; git commit -a -m 'update'; git push;"
+    "push": "git add .; git commit -m 'update'; git push;"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -16,8 +16,8 @@
   "author": "Dmytro Sobchuk <sobdima@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "simplelightbox": "^2.14.2",
-    "vanilla-tilt": "^1.8.1",
+    "flatpickr": "^4.6.13",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   },
