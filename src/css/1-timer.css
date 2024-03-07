@@ -1,7 +1,29 @@
+.container {
+    padding: 15px;
+    /* display: flex; */
+    text-align: center;
+    min-width: fit-content;
+
+}
+
+
 input {
     display: inline-block;
-    width: 272px;
+    max-width: 272px;
+    height: 40px;
 
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
+
+}
+
+input:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input:active {
+    border: 1px solid rgb(78, 117, 255);
 }
 
 button {
@@ -38,6 +60,8 @@ button:disabled {
 .timer {
     display: flex;
     gap: 24px;
+    align-items: center;
+    justify-content: center;
     /* width: 355px; */
 }
 
