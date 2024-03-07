@@ -4,38 +4,32 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.js-form');
-// let delay;
 
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
   e.preventDefault();
   const delay = e.currentTarget.elements.delay.value;
-
-  console.log(e);
+  const promise = new Promise((res, rej) => {
+    if (form.querySelector('input:checked').value === 'fulfilled') {
+      setTimeout(() => {
+        res(delay);
+      }, delay);
+    } else {
+      rej(delay);
+    }
+  });
+  promise
+    .then(delay => {
+      iziToast.success({
+        title: 'OK',
+        message: `✅ Fulfilled promise in ${delay}ms`,
+      });
+    })
+    .catch(delay => {
+      iziToast.error({
+        title: 'Error',
+        message: `❌ Rejected promise in ${delay}ms`,
+      });
+    });
 }
-// `✅ Fulfilled promise in ${delay}ms`;
-// `❌ Rejected promise in ${delay}ms`;
-
-function createPromise(delay, callback) {
-  return new Promise((res, rej) => {
-    setTimeout(() => res, delay);
-  }).then(() => callback);
-}
-// function countWithDelay(delay, times, interval) {
-//   let count = 0;
-//   function logCount() {
-//     count += 1;
-//     if (count > times) return;
-//     setTimeout(logCount, interval);
-//     console.log(count);
-//   }
-//   createPromise(delay, logCount);
-// }
-
-// function createPromise(delay, callback) {
-//   return new Promise((res) => {
-//     setTimeout(() => res(), delay);
-//   }).then(() => callback());
-// }
-// countWithDelay(1000, 5, 3000);
