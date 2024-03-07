@@ -1,0 +1,53 @@
+input {
+    display: inline-block;
+    width: 272px;
+
+}
+
+
+button:disabled {
+    background: rgb(207, 207, 207);
+    color: rgb(152, 152, 152);
+
+}
+
+
+button {
+    display: inline-block;
+    height: 40px;
+
+    cursor: pointer;
+    background: rgb(78, 117, 255);
+
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04rem;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(108, 140, 255);
+}
+
+/* .container {
+    display: flex;
+} */
+
+.timer {
+    display: flex;
+    gap: 24px;
+    /* width: 355px; */
+}
+
+
+.field {
+    display: flex;
+    flex-direction: column;
+}

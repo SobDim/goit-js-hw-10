@@ -18,7 +18,7 @@ const msgOptions = {
   class: 'message',
 };
 
-let selectedDates;
+let diff;
 
 const options = {
   enableTime: true,
