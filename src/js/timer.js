@@ -21,6 +21,12 @@ const options = {
       return iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
+        iconUrl: '../img/error.svg',
+        backgroundColor: 'rgb(239, 64, 64)',
+        messageColor: 'rgb(255, 255, 255)',
+        titleColor: 'rgb(255, 255, 255)',
+        position: 'topRight',
+        close: 'rgb(255, 255, 255)',
       });
     }
     startBtn.disabled = false;
