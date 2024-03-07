@@ -4,14 +4,6 @@ input {
 
 }
 
-
-button:disabled {
-    background: rgb(207, 207, 207);
-    color: rgb(152, 152, 152);
-
-}
-
-
 button {
     display: inline-block;
     height: 40px;
@@ -23,6 +15,8 @@ button {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.04rem;
+    font-size: 16px;
+
 
     padding: 8px 16px;
     border-radius: 8px;
@@ -30,15 +24,16 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:enabled:hover {
     color: rgb(255, 255, 255);
-
     background-color: rgb(108, 140, 255);
 }
 
-/* .container {
-    display: flex;
-} */
+button:disabled {
+    background: rgb(207, 207, 207);
+    color: rgb(152, 152, 152);
+
+}
 
 .timer {
     display: flex;
