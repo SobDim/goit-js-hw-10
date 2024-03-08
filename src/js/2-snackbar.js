@@ -36,10 +36,10 @@ function onFormSubmit(e) {
   errorMsg.message = `❌ Rejected promise in ${delay} ms`;
 
   promise
-    .then(delay => {
+    .then(() => {
       iziToast.success(okMsg);
     })
-    .catch(delay => {
+    .catch(() => {
       iziToast.error(errorMsg);
     });
 }
